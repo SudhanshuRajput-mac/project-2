@@ -10,23 +10,10 @@ st.set_page_config(page_title="ML Model Deployment", page_icon="🤖", layout="c
 
 st.title("🤖 Machine Learning Model Deployment")
 # st.write("This app uses a pre-trained model to make predictions.")
-# Inject CSS
-st.markdown(
-    """
-    <style>
-    label[data-baseweb="form-control"] > div[data-testid="stMarkdownContainer"] p {
-        font-size: 24px; /* Change size */
-        color: darkblue; /* Optional: change color */
-        font-weight: bold; /* Optional: make bold */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 # Example: assume model takes 2 features as input
-f1 = st.number_input("\U0001F382 : ")
-f2 = st.number_input("Enter Feature experience : ")
+f1 = st.number_input("Enter The Age 👤 : ")
+f2 = st.number_input("Enter Feature experience 🧑‍💻 : ")
 
 # Predict button
 if st.button("Predict"):
